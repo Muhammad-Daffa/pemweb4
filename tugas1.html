@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas1</title>
+	<!-- memanggil jquery -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		// menuliskan function yang akan dijalankan
+		$(document).ready(function(){
+			// menyembunyikan gambar1
+			$(".sembunyigambar1").click(function() {$("#gambar1").hide("slow") });
+			// menampilkan gambar1
+			$(".tampilgambar1").click(function() {$("#gambar1").show("slow") });
+			// menyembunyikan gambar2
+			$(".sembunyigambar2").click(function() {$("#gambar2").hide("slow") });
+			//menampilkan gambar2
+			$(".tampilgambar2").click(function() {$("#gambar2").show("slow") });
+		});
+	</script>
+</head>
+<body>
+<!-- button untuk menyembunyikan gambar1 -->
+<button class="sembunyigambar1">sembunyikan</button>
+<!-- button untuk menampilkan gambar1 -->
+<button class="tampilgambar1">tampilkan</button>
+<!-- mendefiniskan dan memanggil gambar1 -->
+<p><img id="gambar1" src="logoupnbaru.png"></p>
+
+<!-- button untuk menyembunyikan gambar2 -->
+<button class="sembunyigambar2">sembunyikan</button>
+<!-- button untuk menampilkan gambar2 -->
+<button class="tampilgambar2">tampilkan</button>
+<!-- mendefinisikan dan memanggil  gambar2 -->
+<p><img id="gambar2" src="ccc.jpg"></p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tugas3</title>
+	<!-- memanggil jquery -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		// menuliskan function yang akan dijalankan
+		$(document).ready(function(){
+			// membuat class bernama sembunyikanobjek agar berjalan ketika diklik
+			$(".sembunyikanobjek").click(function(){
+				//membuat id ubahobjek menjadi disembunyikan
+				$("#ubahobjek").hide();
+			});
+			// membuat class bernama tampilkannobjek agar berjalan ketika diklik
+			$(".tampilkanobjek").click(function(){
+				//membuat id ubahobjek menjadi tampil kembali
+				$("#ubahobjek").fadeIn();
+			});
+			// membuat perintah bernama fadeobjek agar berjalan ketika diklik
+			$(".fadeobjek").click(function(){
+				//membuat id ubahobjek menjadi fadeTo 0.3
+				$("#ubahobjek").fadeTo("slow", 0.3);
+			});
+		});
+	</script>
+	<style type="text/css">
+		.objek{
+			height: 100px;
+			width: 150px;
+			background-color: yellow;
+			border: 2px solid black;
+			}
+		div{
+			padding: 20px;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- membuat class objek di HTML dan juga mendefinisikannya dengan id ubahobjek -->
+	<div class="objek" id="ubahobjek"></div>
+	<!-- membuat button untuk memanggil sembunyikanobjek-->
+	<button class="sembunyikanobjek">fade out</button>
+	<!-- membuat button untuk memanggil tampilkanobjek-->
+	<button class="tampilkanobjek">fade in</button>
+	<!-- membuat button untuk memanggil fadeobjek-->
+	<button class="fadeobjek">fade to 0.3</button>
+</body>
+</html>
